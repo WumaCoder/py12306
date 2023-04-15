@@ -16,6 +16,6 @@ VOLUME /data
 
 COPY . .
 
-# COPY env.docker.py.example /config/env.py
+COPY env.docker.py.example /config/env.py
 
 CMD [ "python", "main.py" , "-c", "/config/env.py"]
