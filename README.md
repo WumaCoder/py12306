@@ -100,6 +100,7 @@ docker run --rm --name py12306 -p 8008:8008 -d -v $(pwd):/config -v py12306:/dat
 **1. 复制配置文件**
 ```
 cp docker-compose.yml.example docker-compose.yml
+cp env.docker.py.example env.py # 修改这个文件
 ```
 
 **2. 从 docker-compose 运行**
@@ -107,6 +108,7 @@ cp docker-compose.yml.example docker-compose.yml
 在`docker-compose.yml`所在的目录使用命令
 ```
 docker-compose up -d
+# 最开始可以加 -d 方便调试
 ```
 
 ## Web 管理页面
